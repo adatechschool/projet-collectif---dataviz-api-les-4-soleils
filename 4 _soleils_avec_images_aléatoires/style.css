@@ -1,5 +1,5 @@
 body {
-    background: transparent; /* Make it white if you need */
+    background: transparent;
     color: #fcbe24;
     padding: 0 24px;
     margin: 0;
@@ -32,7 +32,6 @@ body {
   }
   
   .date{
-    font-size: 25px;
+    font-size: 27px;
     font-family: 'Nunito Sans', sans-serif;
-    padding-top: 10px;
   }
