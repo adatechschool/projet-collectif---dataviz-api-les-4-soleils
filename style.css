@@ -10,12 +10,13 @@
 body{
     background-image: 
     linear-gradient(to bottom, rgba(10,10,10,0.2)0%, rgba(10,10,10,0.2)100%),
-    url('IMG_8505.png');
+    url('jour.png');
     height: 100vh;
     width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-size: cover;
 }
 
 
