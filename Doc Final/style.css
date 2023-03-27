@@ -22,7 +22,9 @@ body {
     color: #fff;
     text-shadow: 0 2px 50px rgb(0, 0, 0);
 }
-
+.horloge{
+    margin-right: 400px;;
+}
 .heures{
     width: 500px;
     font-size: 100px;
@@ -36,12 +38,15 @@ body {
     font-size: 25px;
     font-family: 'Nunito Sans', sans-serif;
     padding-top: 10px;
+    text-shadow: 5px 5px 10px black;
 }
 
 .position{
     position:relative;
-    bottom :160px;
-    left:800px;
+    bottom :180px;
+    left:900px;
+    
+
 }
 
 table,
