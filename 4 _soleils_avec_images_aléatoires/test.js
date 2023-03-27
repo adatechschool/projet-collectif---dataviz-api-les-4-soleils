@@ -13,12 +13,17 @@ async function getAPI() {
   return data;
 }
 
+
 //fonction pour changer en mode random avec un poti tableau (à voir pour changer en fichier json ?)
 //Photos de JOUR :
 function randomImageAfterSunrise(pic){
   //tableau avec toutes les images ;) (on pourra en rajouter pepouze)
   //bien marqué 'url' devant le nom & chemin de l'image
-  let images = ["url(img/after_sunrise/afterSunrise.jpg)","url(img/after_sunrise/city.png)","url(img/after_sunrise/city2.png)","url(img/after_sunrise/sea.png)","url(img/after_sunrise/sea2.png)"]
+  let images = ["url(img/after_sunrise/hillRodShelley.jpg)",
+  "url(img/after_sunrise/daytimeJoakimStigsson.jpg)","url(img/after_sunrise/cloudBenAdman.jpg)",
+  "url(img/after_sunrise/forestAipict.com.jpg)","url(img/after_sunrise/mountainLodgeJoakimStigsson.jpg)",
+  "url(img/after_sunrise/roadSurendraRajawat.jpg)"
+  ]
   let imageslength = images.length;
   let randomNumber = Math.random()
   randomNumber = randomNumber*imageslength
@@ -32,7 +37,10 @@ function randomImageAfterSunrise(pic){
 
 //Photos de NUIT :
 function randomImageSoir(pic){
-  let images = ["url(img/soir/soir.jpg)"]
+  let images = ["url(img/soir/beachAdamVarga.jpg)","url(img/soir/cityBaptisteChauveau.jpg)",
+  "url(img/soir/parisLizHume.jpg)","url(img/soir/forestThomasLafon_Djalloul.jpg)",
+  "url(img/soir/gothamEricGagnon.jpg)","url(img/soir/NWMichaelRhima.jpg)"
+]
   let imageslength = images.length
   let randomNumber = Math.random()
   randomNumber = randomNumber*imageslength
@@ -44,7 +52,10 @@ function randomImageSoir(pic){
 
 //Photos LEVEE DU SOLEIL :
 function randomImageSunrise(pic){
-  let images = ["url(img/sunrise/sunrise.jpg)"]
+  let images = ["url(img/sunrise/cabinEricDurante.jpg)",
+  "url(img/sunrise/champDmityWittmann.jpg)","url(img/sunrise/champTamasGyerman.jpg)",
+  "url(img/sunrise/morningIwoPilc.jpg)","url(img/sunrise/oceanTalaSelman.jpg)",
+  "url(img/sunrise/dayPetriJääskeläinen.jpg)"]
   let imageslength = images.length
   let randomNumber = Math.random()
   randomNumber = randomNumber*imageslength
@@ -56,7 +67,9 @@ function randomImageSunrise(pic){
 
 //Photos COUCHE DU SOLEIL :
 function randomImageSunset(pic){
-  let images = ["url(img/sunset/sunset.jpg)"]
+  let images = ["url(img/sunset/forestJeffyZachariah.jpg)",
+  "url(img/sunset/SurendraRajawat.jpg)","url(img/sunset/seaAlenaAenami.jpg)",
+  "url(img/sunset/valleyCarolineSandgren.jpg)","url(img/sunset/sunsetScottRichard.jpg)"]
   let imageslength = images.length
   let randomNumber = Math.random()
   randomNumber = randomNumber*imageslength
@@ -94,6 +107,7 @@ function changePic(sunrise, sunset) {
     document.body.style.backgroundRepeat = "no-repeat";
   }
 }  
+
 
 console.log(getAPI());
 console.log(randomImageAfterSunrise())
