@@ -1,0 +1,59 @@
+body {
+    background: transparent; /* Make it white if you need */
+    color: #fcbe24;
+    padding: 0 24px;
+    margin: 0;
+    height: 100vh;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  
+
+
+.horloge{
+    display: flex;                                                        
+    flex-direction: column;   
+    justify-content: center;                       
+    align-items: center;                                       
+    color: #fff;
+    text-shadow: 0 2px 50px rgba(10,10,10,0.5);
+}
+
+.heures{
+    width: 500px;
+    font-size: 100px;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(10,10,10,0.2);
+}
+
+.date{
+    font-size: 25px;
+    font-family: 'Nunito Sans', sans-serif;
+    padding-top: 10px;
+}
+
+.position{
+    position:relative;
+    bottom :160px;
+    left:800px;
+    
+
+}
+
+table,
+      td,
+      th {
+        padding: 10px;
+        border: 2px solid #1c87c9;
+        border-radius: 5px;
+        background-color:#e5e5e5;
+        text-align: center;
+    }
+    
+ 
