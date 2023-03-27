@@ -69,7 +69,8 @@ function randomImageSunrise(pic){
 function randomImageSunset(pic){
   let images = ["url(img/sunset/forestJeffyZachariah.jpg)",
   "url(img/sunset/SurendraRajawat.jpg)","url(img/sunset/seaAlenaAenami.jpg)",
-  "url(img/sunset/valleyCarolineSandgren.jpg)","url(img/sunset/sunsetScottRichard.jpg)"]
+  "url(img/sunset/valleyCarolineSandgren.jpg)","url(img/sunset/sunsetScottRichard.jpg)",
+  "url(img/sunset/forestNickHetlne.jpg)"]
   let imageslength = images.length
   let randomNumber = Math.random()
   randomNumber = randomNumber*imageslength
