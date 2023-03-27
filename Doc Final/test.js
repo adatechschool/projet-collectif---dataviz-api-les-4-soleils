@@ -20,9 +20,7 @@ async function getAPI() {
   document.getElementById("temperature").innerHTML=temperature + "°C"
   document.getElementById("rosee").innerHTML="la rosee"
   document.getElementById("dewpoint").innerHTML=dewpoint
-  document.getElementById("code").innerHTML="Le code meteo"
-  document.getElementById("weathercode").innerHTML=weathercode
-  
+  meteo(weathercode)
   changePic(sunrise, sunset);
   return data;
 }
@@ -165,3 +163,37 @@ let affichageHeure = function(){
 
 //Lancer la fonction une fois au début : 
 affichageHeure();
+
+function meteo (weathercode){
+    let pluieforte = [81, 82, 67];
+    let averse = [51, 53, 55, 56, 57, 66, 80];
+    let orage = [95, 96, 99];
+    let neige = [71, 73, 75, 77, 85, 86];
+    let cielCouvert = [1, 2];
+    let brouillard = [45, 48];
+
+    if (weathercode === 0) {
+        document.getElementById("weathercode").innerHTML += "<img class=\"table-img\" src='Images/soleil.png'>";
+    }
+    if (pluieforte.includes(weathercode)){
+        document.getElementById("weathercode").innerHTML += "<img class=\"table-img\" src='Images/pluieForte.png'>";
+    }
+    if (averse.includes(weathercode)){
+        document.getElementById("weathercode").innerHTML += "<img class=\"table-img\" src='Images/pluieForte.png'>";
+    }
+    if (orage.includes(weathercode)){
+        document.getElementById("weathercode").innerHTML += "<img class=\"table-img\" src='Images/pluieForte.png'>";
+    }
+    if (neige.includes(weathercode)){
+        document.getElementById("weathercode").innerHTML += "<img class=\"table-img\" src='Images/pluieForte.png'>";
+    }
+    if (cielCouvert.includes(weathercode)){
+        document.getElementById("weathercode").innerHTML += "<img class=\"table-img\" src='Images/pluieForte.png'>";
+    }
+    if (brouillard.includes(weathercode)){
+        document.getElementById("weathercode").innerHTML += "<img class=\"table-img\" src='Images/pluieForte.png'>";
+    }
+    if (weathercode === 3){
+        document.getElementById("weathercode").innerHTML += "<img class=\"table-img\" src='Images/pluieForte.png'>";
+    }
+}
