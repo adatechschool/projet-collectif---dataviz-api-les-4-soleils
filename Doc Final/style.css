@@ -21,7 +21,16 @@ body {
     align-items: center;                                       
     color: #fff;
     text-shadow: 0 2px 50px rgb(0, 0, 0);
+    /*animation de l'heure & date (nom)*/
+    animation-name: horloge;
+    animation-duration: 4s;
 }
+
+/*animation v*/
+@keyframes horloge {
+    from {color: #ffffff00;}
+    to {color: #fff;}
+  }
 
 .heures{
     width: 500px;
