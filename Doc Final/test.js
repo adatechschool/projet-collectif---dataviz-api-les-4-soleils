@@ -179,21 +179,47 @@ function meteo (weathercode){
         document.getElementById("weathercode").innerHTML += "<img class=\"table-img\" src='Images/pluieForte.png'>";
     }
     if (averse.includes(weathercode)){
-        document.getElementById("weathercode").innerHTML += "<img class=\"table-img\" src='Images/pluieForte.png'>";
+        document.getElementById("weathercode").innerHTML += "<img class=\"table-img\" src='Images/pluie.png'>";
     }
     if (orage.includes(weathercode)){
-        document.getElementById("weathercode").innerHTML += "<img class=\"table-img\" src='Images/pluieForte.png'>";
+        document.getElementById("weathercode").innerHTML += "<img class=\"table-img\" src='Images/Orage.png'>";
     }
     if (neige.includes(weathercode)){
-        document.getElementById("weathercode").innerHTML += "<img class=\"table-img\" src='Images/pluieForte.png'>";
+        document.getElementById("weathercode").innerHTML += "<img class=\"table-img\" src='Images/neige.png'>";
     }
     if (cielCouvert.includes(weathercode)){
-        document.getElementById("weathercode").innerHTML += "<img class=\"table-img\" src='Images/pluieForte.png'>";
+        document.getElementById("weathercode").innerHTML += "<img class=\"table-img\" src='Images/Ciel couvert.png'>";
     }
     if (brouillard.includes(weathercode)){
-        document.getElementById("weathercode").innerHTML += "<img class=\"table-img\" src='Images/pluieForte.png'>";
+        document.getElementById("weathercode").innerHTML += "<img class=\"table-img\" src='Images/brouillard.png'>";
     }
     if (weathercode === 3){
-        document.getElementById("weathercode").innerHTML += "<img class=\"table-img\" src='Images/pluieForte.png'>";
+        document.getElementById("weathercode").innerHTML += "<img class=\"table-img\" src='Images/nuage.png'>";
     }
+}
+
+function myFunction() {
+    var textArea = document.createElement("TEXTAREA");
+    textArea.name = 'post';
+    textArea.maxLength = 5000;
+    textArea.cols = 30;
+    textArea.rows = 10;
+    textArea.className = 'Textarea';
+
+    var t = document.createTextNode("écrire..");
+    textArea.appendChild(t);
+    // button remove;
+    var btn = document.createElement("BUTTON");
+    var tButton = document.createTextNode("X");
+    btn.appendChild(tButton);
+
+    document.body.appendChild(textArea);
+
+    document.body.appendChild(btn);
+    btn.addEventListener("click", function () {
+        // remove textarea
+        textArea.remove();
+        // remove button
+        this.remove();
+    });
 }

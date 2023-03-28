@@ -56,3 +56,54 @@ table,
 .table-img {
     width: 100%;
 }
+.note{
+
+    background-color: #5a92bd;
+    border-radius: 10px;
+    border: 4px double #cccccc;
+    color: #eeeeee;
+    text-align: center;
+    font-size: 24px;
+    padding-right: 0px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    margin-bottom: 510px ;
+    position:relative;
+    right: 270px;
+    font-family:cursive;
+}
+.note span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+.note span:after {
+    content: "\00bb";
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+.note:hover {
+    background-color: #7a9cdf;
+}
+.note:hover span {
+    padding-right: 25px;
+}
+.note:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.Textarea{
+    color: red;
+    resize : none;
+    margin-bottom: 300px ;
+    position:relative;
+    right: 200px;
+    font-family:cursive;
+}
