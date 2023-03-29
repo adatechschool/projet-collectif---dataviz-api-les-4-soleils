@@ -9,16 +9,16 @@ async function getAPI() {
   let temperature=data.hourly.temperature_2m[0]
   let dewpoint=data.hourly.dewpoint_2m[0]
   let weathercode=data.hourly.weathercode[0]
-  document.getElementById("titre-tableau").innerHTML="LA METEO DU JOURS"
-  document.getElementById("levee").innerHTML="l'heure de la  levee du soleil "
-  document.getElementById("sunrise").innerHTML= sunrise
-  document.getElementById("couchee").innerHTML="l'heure du couchée du soleil  "
-  document.getElementById("sunset").innerHTML=sunset
-  document.getElementById("date-jour").innerHTML="la date du jour"
-  document.getElementById("temp").innerHTML=temps
-  document.getElementById("affiche-temperature").innerHTML="la temperature actuelle"
+  document.getElementById("titre-tableau").innerHTML="LA MÉTÉO DU JOUR"
+  document.getElementById("levee").innerHTML="L'heure du levée du soleil "
+  document.getElementById("sunrise").innerHTML= sunrise.substr(-5)
+  document.getElementById("couchee").innerHTML="L'heure du couchée du soleil  "
+  document.getElementById("sunset").innerHTML=sunset.substr(-5)
+  document.getElementById("date-jour").innerHTML="La date du jour"
+  document.getElementById("temp").innerHTML=temps.substr(-20,10)
+  document.getElementById("affiche-temperature").innerHTML="La température actuelle"
   document.getElementById("temperature").innerHTML=temperature + "°C"
-  document.getElementById("rosee").innerHTML="la rosee"
+  document.getElementById("rosee").innerHTML="La rosée"
   document.getElementById("dewpoint").innerHTML=dewpoint
   meteo(weathercode)
   changePic(sunrise, sunset);
