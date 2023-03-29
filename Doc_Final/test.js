@@ -5,7 +5,6 @@ async function getAPI() {
   let data = await fetchResult.json();
   let sunrise = data.daily.sunrise[0];
   let sunset = data.daily.sunset[0];
-  let temps= data.hourly.time[0]
   let temperature=data.hourly.temperature_2m[0]
   let dewpoint=data.hourly.dewpoint_2m[0]
   let weathercode=data.hourly.weathercode[0]
@@ -14,8 +13,7 @@ async function getAPI() {
   document.getElementById("sunrise").innerHTML= sunrise.substr(-5)
   document.getElementById("couchee").innerHTML="L'heure du couchée du soleil  "
   document.getElementById("sunset").innerHTML=sunset.substr(-5)
-  document.getElementById("date-jour").innerHTML="La date du jour"
-  document.getElementById("temp").innerHTML=temps.substr(-20,10)
+  
   document.getElementById("affiche-temperature").innerHTML="La température actuelle"
   document.getElementById("temperature").innerHTML=temperature + "°C"
   document.getElementById("rosee").innerHTML="La rosée"
