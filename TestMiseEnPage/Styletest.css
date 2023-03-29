@@ -19,8 +19,9 @@ body{
     text-align: center;
 }
 
-.note{
-    flex-basis: 25%;
+  
+.add-note-btn{
+   
     background-color: #5a92bd;
     border-radius: 10px;
     border: 4px double #cccccc;
@@ -33,43 +34,72 @@ body{
     cursor: pointer;
     margin: 5px;
     margin-bottom: 510px ;
-    position:relative;
+    height: 40px;
     right: 270px;
     font-family:cursive;
-}
-.note span {
+  }
+   .note span {
     cursor: pointer;
     display: inline-block;
-    position: relative;
+  
     transition: 0.5s;
-}
-.note span:after {
+  }
+  .note span:after {
     content: "\00bb";
     position: absolute;
     opacity: 0;
     top: 0;
     right: -20px;
     transition: 0.5s;
-}
-.note:hover {
+  }
+  .note:hover {
     background-color: #7a9cdf;
-}
-.note:hover span {
+  }
+  .note:hover span {
     padding-right: 25px;
-}
-.note:hover span:after {
+  }
+  .note:hover span:after {
     opacity: 1;
     right: 0;
-}
+  }
+  
+  .textarea {
+    background-color: #e4e2e2;
+    color: #666666;
+    padding: 1em;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    outline: none;
+    font-family: "Heebo", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.4;
+    width: 200px;
+    height: 100px;
+    left: 500px;
+    transition: all 0.2s;
+  }
+  
+  input[type="text"], textarea {
+    left: 20px;
+  
+    background-color : #a2c2e1; 
+  }  
+  
+  
+  .row {
+  width: 20%;
+  margin: ;
+  display: flex;
+  justify-content: flex-start;
+  height:;
+  width:; 
+  }
+  .block {
+  width: 100px;
+  }
+  
 
-.Textarea{
-    color: red;
-    resize : none;
-    margin-bottom: 300px ;
-    position:relative;
-    right: 200px;
-    font-family:cursive;
-}
 
 
 .horloge{

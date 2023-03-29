@@ -9,9 +9,11 @@
 <body>
     <header class="header">En tête !</header>
 
-    <aside class="Notebook">
-        <button class="note" onclick="blocNote()">Ajouter Note</button>
-    </aside>
+    <div class="row">
+        <button class="add-note-btn" onclick="blocNote()">Add bloc-note</button>
+        <div id="bloc-note" class="block">
+        </div>
+    </div>
 
     <div class="horloge">
         <div class="heures"></div>

@@ -211,28 +211,30 @@ function meteo (weathercode){
     }
 }
 
-function myFunction() {
-    var textArea = document.createElement("TEXTAREA");
-    textArea.name = 'post';
-    textArea.maxLength = 5000;
-    textArea.cols = 30;
-    textArea.rows = 10;
-    textArea.className = 'Textarea';
 
-    var t = document.createTextNode("écrire..");
-    textArea.appendChild(t);
-    // button remove;
-    var btn = document.createElement("BUTTON");
-    var tButton = document.createTextNode("X");
-    btn.appendChild(tButton);
+//BLOC NOTE
+function addBlocNote() {
+  var textArea = document.createElement("TEXTAREA");
+  textArea.name = 'post';
+  textArea.maxLength = 5000;
+  textArea.cols = 30;
+  textArea.rows = 10;
+  textArea.className = 'Textarea';
 
-    document.body.appendChild(textArea);
+  var t = document.createTextNode("");
+  textArea.appendChild(t);
+  // button remove;
+  var btn = document.createElement("BUTTON");
+  var tButton = document.createTextNode("X");
+  btn.appendChild(tButton);
 
-    document.body.appendChild(btn);
-    btn.addEventListener("click", function () {
-        // remove textarea
-        textArea.remove();
-        // remove button
-        this.remove();
-    });
+  document.body.appendChild(textArea);
+
+  document.body.appendChild(btn);
+  btn.addEventListener("click", function () {
+      // remove textarea
+      textArea.remove();
+      // remove button
+      this.remove();
+  });
 }
