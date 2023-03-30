@@ -6,41 +6,45 @@
 
     <link rel="stylesheet" href="style.css">
     
+    
   </head>
 
   <body>
+   <div class="display">
   <button class="note" onclick="myFunction()">Add bloc-note</button>
+   </div>
+   <div class="display">
     <div class="position">
         <table id = "weathercode" >
             <caption id="titre-tableau"></caption>
             <tbody>
              <tr>
-                <td id="levee"></td>
-                <td id="sunrise"></td>
+                <td id="levee" class="box"></td>
+                <td id="sunrise" class="box"></td>
              </tr>
              <tr>
-                <td id="couchee"></td>
-                <td id="sunset"></td>
+                <td id="couchee" class="box"></td>
+                <td id="sunset" class="box"></td>
              </tr>
              <tr>
-                <td id="date-jour"></td>
-                <td id="temp"></td>
+                <td id="affiche-temperature" class="box"></td>
+                <td id="temperature" class="box"></td>
              </tr>
              <tr>
-                <td id="affiche-temperature"></td>
-                <td id="temperature"></td>
-             </tr>
-             <tr>
-                <td id="rosee"></td>
-                <td id="dewpoint"></td>
+                <td id="rosee" class="box"></td>
+                <td id="dewpoint" class="box"></td>
              </tr>
             </tbody>
           </table>
     </div>
+    </div>
+    <div class="display">
     <div class="horloge">
       <div class="heures"></div>
       <div class="date"></div>
   </div>
+</div>
+
     <script src="test.js"></script>
      
   </body>

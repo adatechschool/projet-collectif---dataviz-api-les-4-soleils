@@ -14,8 +14,6 @@ async function getAPI() {
   document.getElementById("sunrise").innerHTML= sunrise
   document.getElementById("couchee").innerHTML="l'heure du couchée du soleil  "
   document.getElementById("sunset").innerHTML=sunset
-  document.getElementById("date-jour").innerHTML="la date du jour"
-  document.getElementById("temp").innerHTML=temps
   document.getElementById("affiche-temperature").innerHTML="la temperature actuelle"
   document.getElementById("temperature").innerHTML=temperature + "°C"
   document.getElementById("rosee").innerHTML="la rosee"

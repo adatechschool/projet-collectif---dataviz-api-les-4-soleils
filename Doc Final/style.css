@@ -1,3 +1,6 @@
+html {
+    width: 100%;
+}
 body {
     background: transparent; /* Make it white if you need */
     color: #fcbe24;
@@ -23,7 +26,7 @@ body {
     text-shadow: 0 2px 50px rgb(0, 0, 0);
 }
 .horloge{
-    margin-right: 400px;;
+    margin-right: 250px;;
 }
 .heures{
     width: 500px;
@@ -41,10 +44,10 @@ body {
     text-shadow: 5px 5px 10px black;
 }
 
-.position{
+/*.position{
     position:relative;
     bottom :180px;
-    left:900px;
+    left:800px;
     
 
 }
@@ -56,6 +59,23 @@ table,
         border: 2px solid #1c87c9;
         border-radius: 5px;
         text-align: center;
+    }*/
+    .position{
+        width: 300px;
+        height: 300px;
+        display: flex;
+        flex-wrap: wrap;
+        position: absolute;
+        left: 1150px;
+        top: 10px;
+    }
+    
+    .box{
+        width: 250px;
+        height: 30px;
+        background-color:white ;
+        font-size: 20px;
+        color:rgb(0, 0, 0);
     }
 
 .table-img {
@@ -76,7 +96,7 @@ table,
     margin: 5px;
     margin-bottom: 510px ;
     position:relative;
-    right: 270px;
+    right:200px;
     font-family:cursive;
 }
 .note span {
